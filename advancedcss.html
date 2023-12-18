@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3: Advanced CSS Techniques</title>
+    <link href="advanced.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="advanced-css">
+        <div id="advanced-css-content">
+            <h2>Advanced CSS Techniques</h2>
+            <br>
+            <p>Embark on an exploration of advanced CSS techniques that will empower you to create sophisticated web layouts. This lesson will help you master complex design patterns and responsive frameworks.</p>
+            <p>Key topics covered in this lesson:</p>
+            <ul>
+                <li>Flexbox: Harness the flexibility of CSS Flexbox to build fluid layouts.</li>
+                <li>CSS Grid: Learn to design intricate grid-based layouts with simplicity and control.</li>
+                <li>CSS Variables: Discover the power of CSS custom properties for maintaining styles.</li>
+                <li>Advanced Selectors: Utilize advanced CSS selectors to target elements more precisely.</li>
+                <li>Media Queries: Deep dive into media queries for crafting truly responsive designs.</li>
+            </ul>
+            <p>By the end of this lesson, your proficiency in CSS will enable you to develop responsive and modern web designs with ease.</p>
+        </div>
+    </section>
+    <main>
+        <!-- Flexbox Example Section -->
+        <section id="flexbox-example">
+            <h3>Flexbox Layout Example</h3>
+            <p>Flexbox allows you to design a flexible responsive layout structure without using float or positioning.</p>
+            <!-- Code Editor for Flexbox -->
+            
+            <div class="editor-container">
+                <!-- Insert your Flexbox example code in the textarea below -->
+                <textarea class="code-input" id="flexbox-code" rows="10" cols="30"></textarea>
+                <button onclick="runCode('flexbox-code', 'flexbox-output')">Run Flexbox Code</button>
+                <div id="flexbox-output" class="code-output"></div>
+            </div>
+        </section>
+
+        <!-- CSS Grid Example Section -->
+        <section id="grid-example">
+            <h3>CSS Grid Layout Example</h3>
+            <p>CSS Grid Layout is a two-dimensional system, meaning it can handle both columns and rows.</p>
+            <!-- Code Editor for CSS Grid -->
+            <div class="editor-container">
+                <!-- Insert your Grid example code in the textarea below -->
+                <textarea class="code-input" id="grid-code" rows="10" cols="30"></textarea>
+                <button onclick="runCode('grid-code', 'grid-output')">Run Grid Code</button>
+                <div id="grid-output" class="code-output"></div>
+            </div>
+        </section>
+
+        <!-- CSS Variables Example Section -->
+        <section id="css-variables-example">
+            <h3>CSS Variables Example</h3>
+            <p>Learn how to use CSS Variables to make your styles more dynamic and easier to manage.</p>
+            <!-- Code Editor for CSS Variables -->
+            <div class="editor-container">
+                <!-- Insert your CSS Variables example code in the textarea below -->
+                <textarea class="code-input" id="css-variables-code" rows="10" cols="30"></textarea>
+                <button onclick="runCode('css-variables-code', 'css-variables-output')">Run CSS Variables Code</button>
+                <div id="css-variables-output" class="code-output"></div>
+            </div>
+        </section>
+
+        <!-- Advanced Selectors Example Section -->
+        <section id="advanced-selectors-example">
+            <h3>Advanced Selectors Example</h3>
+            <p>Master advanced CSS selectors to target elements more effectively.</p>
+            <!-- Code Editor for Advanced Selectors -->
+            <div class="editor-container">
+                <!-- Insert your Advanced Selectors example code in the textarea below -->
+                <textarea class="code-input" id="advanced-selectors-code" rows="10" cols="30"></textarea>
+                <button onclick="runCode('advanced-selectors-code', 'advanced-selectors-output')">Run Advanced Selectors Code</button>
+                <div id="advanced-selectors-output" class="code-output"></div>
+            </div>
+        </section>
+        <section id="media-queries-example">
+            <h3>Media Queries Example</h3>
+            <p>Use media queries to create responsive designs that adapt to different screen sizes and resolutions.
+                 Like the below is the example of min-width: 480px.</p>
+            <!-- Code Editor for Media Queries -->
+            <div class="editor-container">
+                <textarea class="code-input" id="media-queries-code" rows="10" cols="30">
+
+"<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.wrapper {overflow: auto;}
+
+#main {margin-left: 4px;}
+
+#leftsidebar {
+  float: none;
+  width: auto;
+}
+
+#menulist {
+  margin: 0;
+  padding: 0;
+}
+
+.menuitem {
+  background: #CDF0F6;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  list-style-type: none;
+  margin: 4px;
+  padding: 2px;
+}
+
+@media screen and (min-width: 480px) {
+  #leftsidebar {width: 200px; float: left;}
+  #main {margin-left: 216px;}
+}
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+  <div id="leftsidebar">
+    <ul id="menulist">
+      <li class="menuitem">Menu-item 1</li>
+      <li class="menuitem">Menu-item 2</li>
+      <li class="menuitem">Menu-item 3</li>
+      <li class="menuitem">Menu-item 4</li>
+      <li class="menuitem">Menu-item 5</li>
+    </ul>
+  </div>
+  
+  <div id="main">
+    <h1>Resize the browser window to see the effect!</h1>
+    <p>This example shows a menu that will float to the left of the page if the viewport is 480 pixels wide or wider. If the viewport is less than 480 pixels, the menu will be on top of the content.</p>
+  </div>
+</div>
+
+</body>
+</html>"
+
+
+
+                    
+                </textarea>
+                <button onclick="runCode('media-queries-code', 'media-queries-output')">Run Media Queries Code</button>
+                <div id="media-queries-output" class="code-output"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <section id="next-section">
+        <button onclick="navigatelesson('Previous')">Previous Lesson</button>
+        <button onclick="navigatelesson('Next')">Next Lesson</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Interactive Learning Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="advanced.js"></script>
+
+</body>
+</html>
